@@ -16,7 +16,10 @@ export default function Home() {
         </h1>
 
         <p className="mt-3 text-2xl">
-          Select an image to convert and download it in WebP format
+          Select an image to convert and download it in WebP format 5MB size limit on web; 50MB limit locally
+        </p>
+        <p className="mt-3 text-xl">
+          5MB file size limit on web - 50MB limit locally
         </p>
 
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
