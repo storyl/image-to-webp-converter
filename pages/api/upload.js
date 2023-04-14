@@ -2,7 +2,12 @@ import nextConnect from 'next-connect';
 import multer from 'multer';
 import sharp from 'sharp';
 
-const upload = multer({ storage: multer.memoryStorage() });
+const upload = multer({
+  storage: multer.memoryStorage(),
+  limits: {
+    fileSize: 50 * 1024 * 1024, // 50 MB
+  },
+});
 
 const handler = nextConnect()
   .use(upload.array('images'))
